@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="text-align:center;">Video Summarization</title>
+    <link rel="stylesheet" href="C:\Users\Shivaselvam\Downloads\models\models\static\styles.css">
+    <style>
+        body {
+            background-image: url('./static/back-wall.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: auto"
+
+        }
+
+        .btn {
+            font-size: 16px;
+            margin: 10px;
+            background-color: #0c7ba0;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 8px;
+        }
+
+        .frm {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        input {
+            border: none;
+            background-color: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style=" display: flex; padding-top: 10vh; justify-content: center; align-items: center;">
+
+        <h1 style="font-size: 80px;
+        color: whitesmoke; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Video Summarization</h1>
+    </div>
+    <div style="display: flex;
+    justify-content: center;
+    align-items: center;">
+        <form action="/upload" method="post" enctype="multipart/form-data" class="frm">
+            <input type="file" name="file" accept="video/*" required class="btn">
+            <button type=" submit" class="btn" style="background-color: rgb(33, 140, 38);">Start Processing</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Result</title>
+
+</head>
+
+<body style="background-image: url('/static/back.png');
+color: white;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+align-items:center;
+justify-content:center
+;">
+
+    <div class="container">
+        <h1>Video Results</h1>
+        <div style=" display: flex; align-items: center; justify-content: center; flex-direction: column;">
+            <p style="padding-bottom: 10px;">Processed Video:</p>
+            <a style="color: saddlebrown; padding-bottom: 40px; font-size: larger; text-decoration: none;"
+                href="{{ url_for('static', filename='processed/og.mp4') }}" download="processed_video.mp4">
+                <span style="color: blue; font-weight: 500; 
+                    font-size: 20px; border: 2px solid ; 
+                    padding: 15px; border-radius: 7px; 
+                    background-color:rgb(156, 181, 227);">Download
+                    Processed
+                    Video</span>
+            </a>
+        </div>
+        <p>Original Video:</p>
+        <video controls height=" 400px">
+            <source src="{{ url_for('static', filename='uploads/original_video.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</body>
+
+</html>
